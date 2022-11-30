@@ -9,6 +9,14 @@
 <body>
   <h1>Cat Collector</h1>
 
+  {% for cat in cats %}
+    <p>Name: {{ cats.name }}</p>
+    <p>Age: {{ cat.age }}</p>
+    <p>Breed: {{ cat.breed }}</p>
+    <p>Description: {{ cat.description }}</p>
+    <br>
+  {% endfor %}
+
   <footer>All Rights Reserved, Cat Daddy Productions 2022</footer>
 </body>
 </html>
